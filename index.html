@@ -9,9 +9,14 @@
     
     <body>
     <form>
-        <p id="obj1"></p>
-        <p id="obj2"></p>
-        <p id="obj3"></p>
+        <p id="obj1">
+        
+        
+        
+        <p id="answers">
+        
+        </p>
+        
       
     </form>
     
@@ -23,11 +28,14 @@
     success: function(resp, textStatus, jqxhr){
     console.log(resp);
         $("#obj1").text(resp[0].questionText);
-        $("#obj2").text(resp[1].questionText);
-        $("#obj3").text(resp[2].questionText);
+        $("#answers").text(resp[0].answers);
+        
+       
     }
 });
+     
     
+ 
     
     </script>
 
