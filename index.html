@@ -1,16 +1,35 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="theme.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Quiz App</title>
+        <h1 align="center">Quiz App</h1>
         
     </head>
     
     <body>
-    
+    <form>
+        <p id="obj1"></p>
+        <p id="obj2"></p>
+        <p id="obj3"></p>
+      
+    </form>
     
     </body>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script> $.ajax({
+    url: "http://www.fvi-grad.com:4004/quiz",
+    success: function(resp, textStatus, jqxhr){
+    console.log(resp);
+        $("#obj1").text(resp[0].questionText);
+        $("#obj2").text(resp[1].questionText);
+        $("#obj3").text(resp[2].questionText);
+    }
+});
     
+    
+    </script>
 
 
 

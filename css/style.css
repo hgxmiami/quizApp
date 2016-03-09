@@ -1,0 +1,23 @@
+.button {
+    background-color: #f44336; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.form {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    height: 400px;
+}
+.textBox {
+    border: solid;
+    border-color: black;
+    height: 25px;
+    width: 250px;
+    
+}
