@@ -9,15 +9,10 @@
     
     <body>
     <form>
-        <p id="obj1">
-        
-        
-        
-        <p id="answers">
-        
-        </p>
-        
-      
+    <div id="obj1">
+     <input type="radio" name="firstObject">
+        </div>
+    
     </form>
     
     </body>
@@ -28,15 +23,13 @@
     success: function(resp, textStatus, jqxhr){
     console.log(resp);
         $("#obj1").text(resp[0].questionText);
-        $("#answers").text(resp[0].answers);
+     
+        
         
        
     }
 });
      
-    
- 
-    
     </script>
 
 
